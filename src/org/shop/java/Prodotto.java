@@ -10,12 +10,11 @@ public class Prodotto {
 		
 //	constructor
 	public Prodotto(int code, String name, String brand, float price, float vat) {
-		super();
 		this.code = code;
-		this.name = name;
-		this.brand = brand;
-		this.price = price;
-		this.vat = vat;
+		setName(name);
+		setBrand(brand);
+		setPrice(price);
+		setVat(vat);
 	}
 //	methods getter setter
 //	name
