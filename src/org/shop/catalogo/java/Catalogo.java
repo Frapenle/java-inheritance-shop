@@ -24,13 +24,13 @@ public class Catalogo {
 					+ "\n 3) Cuffia"
 					+ "\n 4) Esci");
 			option = sc.nextInt();
+			sc.nextLine();
 			
 			switch(option) {
 				case 1:
 				{
 					System.out.println("Inserisci in nome dello smartphone: ");
 					String name = sc.nextLine();
-					sc.nextLine();
 					
 					System.out.println("Inserisci la marca dello smartphone: ");
 					String brand = sc.nextLine();
@@ -52,7 +52,6 @@ public class Catalogo {
 				{
 					System.out.println("Inserisci in nome della TV: ");
 					String name = sc.nextLine();
-					sc.nextLine();
 					
 					System.out.println("Inserisci la marca della TV: ");
 					String brand = sc.nextLine();
@@ -84,7 +83,6 @@ public class Catalogo {
 				{
 					System.out.println("Inserisci in nome delle cuffie: ");
 					String name = sc.nextLine();
-					sc.nextLine();
 					
 					System.out.println("Inserisci la marca della cuffia: ");
 					String brand = sc.nextLine();
@@ -120,16 +118,16 @@ public class Catalogo {
 			counter++;
 		}
 		for (Prodotto prodotto : prodotti) {
-		    if (prodotto instanceof Smartphone) {	
-		        System.out.println("Smartphone: " + prodotto);
+		    if (prodotto instanceof Smartphone) {
+		        System.out.println("Smartphone: \n" + prodotto);
 		        System.out.println("----------------------");
 		    }
-		    if (prodotto instanceof Televisore) {	
-		        System.out.println("Televisore1: " + prodotto);
+		    if (prodotto instanceof Televisore) {
+		        System.out.println("Televisore: \n" + prodotto);
 		        System.out.println("----------------------");
 		    }
-		    if (prodotto instanceof Cuffia) {	
-		        System.out.println("Cuffia: " + prodotto);
+		    if (prodotto instanceof Cuffia) {
+		        System.out.println("Cuffia: \n" + prodotto);
 		        System.out.println("----------------------");
 		    }
 		}
